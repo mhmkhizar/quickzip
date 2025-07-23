@@ -1,0 +1,73 @@
+name: quickzip
+description: "A Flutter app for extracting zip files"
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  archive: ^3.4.9
+  path_provider: ^2.1.1
+  permission_handler: ^11.0.1
+  google_mobile_ads: ^3.1.0
+  shared_preferences: ^2.2.2
+  url_launcher: ^6.2.2
+  share_plus: ^7.2.1
+  connectivity_plus: ^5.0.2
+  flutter_screenutil: ^5.9.3
+  lottie: ^3.2.0
+  google_fonts: ^6.2.1
+  pull_to_refresh: ^2.0.0
+  open_file: ^3.5.10
+  flutter_riverpod: ^2.6.1
+  html: ^0.15.5
+  intl: ^0.20.2
+  flutter_native_splash: ^2.4.4
+  http: ^1.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/logo/
+    - assets/animation/
+    - assets/icons/
+
+
+# Add this at the bottom of pubspec.yaml
+flutter_native_splash:
+  color: "#111111"  # Black background
+  image: assets/logo/splash_legacy.png  # Path to your app logo
+  android: true
+  ios: true
+  fullscreen: true
+
+  android_12:
+    color: "#111111"
+    image: assets/logo/splash_android12plus.png
+
+
+
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/to/font-from-package
